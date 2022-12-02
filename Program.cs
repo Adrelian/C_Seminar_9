@@ -80,17 +80,17 @@
 //A = 3; B = 5 -> 243 (3⁵)
 //A = 2; B = 3 -> 8
 
-int powNumber (int A, int B)
-{
-    if (B > 1)
-    {
-        return A * powNumber (A, B - 1); 
-    }
-    return A;
-}
+// int powNumber (int A, int B)
+// {
+//     if (B > 1)
+//     {
+//         return A * powNumber (A, B - 1); 
+//     }
+//     return A;
+// }
 
-Console.WriteLine("Введите число ");
-int A = Convert.ToInt32(Console.ReadLine());
-Console.WriteLine("Введите степень ");
-int B = Convert.ToInt32(Console.ReadLine());
-Console.WriteLine(powNumber(A,B));
+// Console.WriteLine("Введите число ");
+// int A = Convert.ToInt32(Console.ReadLine());
+// Console.WriteLine("Введите степень ");
+// int B = Convert.ToInt32(Console.ReadLine());
+// Console.WriteLine(powNumber(A,B));
