@@ -1,2 +1,18 @@
-﻿// See https://aka.ms/new-console-template for more information
-Console.WriteLine("Hello, World!");
+﻿// //Задача 1. Задайте значение N.
+// Напишите программу, которая выведет все натуральные числа
+// в промежутке от 1 до N.
+
+//N = 5 -> "1, 2, 3, 4, 5"
+//N = 6 -> "1, 2, 3, 4, 5, 6"
+
+void allNaturalNumber (int N)
+{
+    if (N >= 1) // условие окончание рекурсии
+    {
+        allNaturalNumber(N - 1); // на вход рекурсии нельзя давать тоже число что в методе 
+        
+        Console.Write(N + " ");     
+    }
+}
+
+allNaturalNumber(10);
